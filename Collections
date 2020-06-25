@@ -1,0 +1,38 @@
+import java.util.*;
+public class ArrayDequeEx {
+
+	public static void main(String[] args) {
+		 
+		ArrayDeque<String> ArDq = new ArrayDeque<String>();
+		
+		ArDq.add("A");
+		ArDq.add("B");
+		ArDq.add("C");
+		ArDq.add("D");
+		ArDq.add("E");
+		
+		
+		//ArDq.offerFirst("G");        //----------adds element at the top
+		//System.out.println(ArDq);
+		
+		ArDq.pollFirst();      // poll() and pollFirst()-both will remove the first element on the top
+		for(String s:ArDq) {
+			
+			System.out.println(s);
+			}
+		ArDq.pollLast();      //pollLast() will remove last element in the array
+		System.out.println(ArDq);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
